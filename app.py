@@ -299,7 +299,8 @@ app = FastAPI()
 
 origins = [
     "http://localhost:5173",
-    "https://mykaarma-assesment-frontend.vercel.app"
+    "https://mykaarma-assesment-frontend.vercel.app",
+    "https://vercel.com/vinay-saraswats-projects/mykaarma-assesment-frontend/GkudFd4kDgYim7MM7H2YMwtCX6Cn"
 ]
 
 app.add_middleware(
