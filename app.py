@@ -296,9 +296,15 @@ Keep it under 150 words and only talk about this phone.
 
 # ===== FastAPI setup =====
 app = FastAPI()
+
+origins = [
+    "http://localhost:5173",
+    "https://mykaarma-assesment-frontend.vercel.app"
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*","https://my-kaarma-assesment-backend-igf9hlck0-vinay-saraswats-projects.vercel.app","http://localhost:5173"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
